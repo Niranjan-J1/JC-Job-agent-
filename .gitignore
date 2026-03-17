@@ -1,0 +1,19 @@
+# Environment — never commit real credentials
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Generated output files
+backend/output/
+
+# Playwright browsers
+**/ms-playwright/
+
+# OS
+.DS_Store
+Thumbs.db
