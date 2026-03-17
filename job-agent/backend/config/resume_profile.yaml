@@ -1,0 +1,83 @@
+#yaml file serves s personal profile, the spoirce of tryth for all answers autoanted 
+
+
+personal:
+  name: "Niranjan Jaishankar "
+  email: "nsjaisha@uwaterloo.ca "
+  phone: "+1 647 482 9442"
+  location: "Brampton, ON, Canada"
+  linkedin: "https://linkedin.com/in/yourprofile"
+  github: "https://github.com/yourusername"
+
+preferences:
+  target_roles:
+    - "Software Engineer"
+    - "Backend Engineer"
+    - "ML Engineer"
+
+  location_preferences:
+    - "Remote"
+    - "Waterloo, ON"
+    - "Toronto, ON"
+
+  excluded_locations: []
+
+  employment_types:
+    - "full-time"
+    - "internship"
+
+  salary_min: 80000
+  salary_max: 200000
+
+  excluded_roles:
+    - "Sales Engineer"
+    - "QA Engineer"
+
+# The scoring engine computes overlap between these and job requirements.
+# core skills are weighted highest, familiar lowest.
+skills:
+  core:
+    - "Python"
+    - "C++"
+    - "Machine Learning"
+
+  proficient:
+    - "FastAPI"
+    - "PostgreSQL"
+    - "Docker"
+    - "REST APIs"
+    - "Linux"
+
+  familiar:
+    - "React"
+    - "TypeScript"
+    - "Redis"
+    - "AWS"
+
+experience:
+  - company: "Company A"
+    title: "Software Engineer"
+    start: "2022-05"
+    end: "present"
+    location: "Waterloo, ON"
+    bullets:
+      - "Built and deployed a real-time ML inference pipeline serving 50k req/s."
+      - "Reduced model latency by 40% through quantization and batching in C++."
+
+education:
+  - institution: "University of Waterloo"
+    degree: "BASc Computer Engineering"
+    graduation: "2022"
+    gpa: "3.8 / 4.0"
+
+projects:
+  - name: "Job Application Agent"
+    description: "Automated job application system using Playwright and LLMs."
+    tech: ["Python", "FastAPI", "Playwright", "PostgreSQL", "OpenAI"]
+
+# Used as context for cover letter generation. First person.
+summary: >
+  Software engineer with experience building high-performance backend
+  systems and ML infrastructure. Strong background in Python and C++,
+  interested in roles at the intersection of systems engineering and
+  machine learning.
