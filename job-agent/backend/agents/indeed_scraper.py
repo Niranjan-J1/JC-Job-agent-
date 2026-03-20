@@ -103,15 +103,24 @@ class IndeedScraper(BaseScraper):
 
                 # Extract company
                 company_el = card.select_one(
-                    '[data-testid="company-name"], .companyName, [class*="company"]'
+                    '[data-testid="company-name"], '
+                    '.companyName, '
+                    'span[class*="company"], '
+                    '[class*="EmployerName"], '
+                    'a[data-testid="company-name"]'
                 )
                 company = company_el.get_text(strip=True) if company_el else "Unknown"
 
                 # Extract location
                 location_el = card.select_one(
-                    '[data-testid="text-location"], .companyLocation, [class*="location"]'
+                    '[data-testid="text-location"], '
+                    '.companyLocation, '
+                    'div[class*="location"], '
+                    '[class*="Location"]'
                 )
                 location = location_el.get_text(strip=True) if location_el else ""
+
+                
 
                 # Click the card to load description in the side panel
                 try:
