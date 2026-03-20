@@ -29,9 +29,8 @@ class Settings(BaseSettings):
     celery_result_backend: str = "redis://redis:6379/1"
 
     # ── AI ────────────────────────────────────────────────────────────────
-    openai_api_key: str = ""
-    openai_model: str = "gpt-4o-mini"
-    openai_model_strong: str = "gpt-4o"
+    groq_api_key: str = ""
+    groq_model: str = "llama-3.1-8b-instant"
 
     # ── Pipeline schedule ─────────────────────────────────────────────────
     pipeline_cron_hour: int = 2

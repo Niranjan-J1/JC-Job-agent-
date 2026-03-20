@@ -37,3 +37,4 @@ pyyaml==6.0.2
 tenacity==9.0.0
 structlog==24.4.0
 python-ulid==2.7.0
+groq==0.11.0
